@@ -1,0 +1,361 @@
+body {
+  font-size: 15px;
+  line-height: 1.5;
+  font-family: Arial, Helvetica, sans-serif;
+  padding: 0;
+  margin: 0;
+  background-color: #f4f4f4;
+}
+
+.container {
+  width: 80%;
+  margin: auto;
+  overflow: hidden;
+}
+/* Remove padding from u1 */
+ul {
+  margin: 0;
+  padding: 0;
+}
+
+#header ul {
+  float: right;
+  padding: 0 0 0 70px;
+  margin: 0;
+}
+
+#header {
+  background: black;
+  color: white;
+  padding-top: 0;
+  min-height: 70px;
+  border-bottom-color: yellow;
+}
+
+#header a {
+  color: white;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 16px;
+}
+/* make li horizontal*/
+#header li {
+  float: left;
+
+  padding: 40px 25px 0 20px;
+}
+
+#header #logo {
+  float: left;
+  width: 130px;
+  height: 100px;
+  float: left;
+  padding: 5px 40px 0 0;
+}
+/*highlight when you hover over an anchor tag*/
+#header a:hover {
+  color: #cccccc;
+  font-weight: bold;
+}
+
+#showcase {
+  min-height: 600px;
+  min-width: 100%;
+  background: url("./Images/showcase.jpg");
+  text-align: center;
+  color: white;
+  margin-top: 0;
+  padding-top: 1px;
+}
+
+#showcase h1 b {
+  color: yellow;
+}
+
+/*centralizes text in the showcase*/
+#showcase h1 {
+  margin-top: 100px;
+  font-size: 40px;
+  margin-bottom: 10px;
+}
+
+#boxes {
+  margin-top: 20px;
+}
+/*making boxes horizontal */
+#boxes .box {
+  text-align: center;
+  float: left;
+  width: 30%;
+  padding: 10px;
+}
+
+ul li {
+  list-style: none;
+}
+
+#footer {
+  padding: 20px;
+  margin-top: 20px;
+  color: white;
+  background-color: black;
+  text-align: center;
+}
+
+#boxes .box img {
+  width: 120px;
+}
+
+#location .container .img {
+  min-height: 600px;
+  min-width: 100%;
+  background: url("./Images/location1.png");
+  text-align: center;
+  color: white;
+  margin-top: 0;
+  padding-top: 1px;
+  border-bottom-style: solid;
+  border-bottom-width: 1px;
+  border-bottom-color: black;
+}
+
+/* contact page address*/
+#address .container {
+  float: none;
+  text-align: center;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+/* align pics horizontally */
+
+#slider .box2 {
+  text-align: center;
+  float: left;
+  width: 30px;
+  height: 30px;
+  padding: 10px;
+}
+
+/* scroll menu */
+
+#carousel {
+  margin-top: 0px;
+  margin-bottom: 100px;
+
+  padding: 10px 0 10px 10px;
+  width: 100%;
+  height: 70%;
+  background-color: rgb(5, 5, 5);
+
+  overflow: auto;
+  white-space: nowrap;
+}
+
+#carousel .slide {
+  display: inline-block;
+}
+
+#carousel .slide img {
+  height: 70%;
+  width: 70%;
+}
+
+#projectDetail .container {
+  text-align: center;
+  float: none;
+  width: 50%;
+  height: 50%;
+  padding: 10px 10px 10px 10px;
+  background-color: rgb(255, 255, 255);
+  color: black;
+}
+
+#projectDetail {
+  padding-bottom: 100px;
+}
+body {
+  background-color: white;
+}
+
+/*media queries*/
+/*this removes all the floats on the webpage so it can work on smaller devices eg phones*/
+
+@media (max-width: 768px) {
+  header,
+  header nav,
+  header nav li,
+  #boxes .box {
+    float: none;
+    text-align: center;
+    width: 100%;
+  }
+}
+/*
+#logo {
+    float: left;
+    width:100px;
+    height:100px;
+    width: 45%;
+    height: 45%;
+    margin: 0px 0px 0px 0px;
+    padding: 0px 0px 0px 0px;
+    font-size: 30px
+}
+
+
+
+img {
+    width: 100%;  
+}
+
+#showcase {
+    position: relative;
+    text-align: center;
+    color: white;
+}
+
+.centered {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    
+}
+span {
+  font-size: 50px;
+}
+
+.centered h1 b {
+  color: yellow; 
+}
+
+#education img {
+  width: 100px;
+  height: 100px;
+  margin: 5px 2px;
+  border-radius: 100%;
+}
+
+#researching img {
+  width: 20%;
+  height: 20%;
+  
+}
+
+#webDevelopment img {
+    
+  width: 100px;
+  height: 100px;
+  text-align: center;
+  text-decoration: none;
+  margin: 5px 2px;
+  border-radius: 100%;
+}
+.container {
+  height: 100%;
+  width: 100%;
+  display: flex;
+}
+
+#education {
+  width: 25%;
+  background-color: blue;
+}
+#researching {
+  width: 50%;
+  background-color: green;
+}
+#webDevelopment {
+  width: 25%;
+  background-color: yellow;
+}
+
+/*
+.container {
+    overflow: hidden;
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: 100%;
+    background-image: url('./images/showcase.jpeg');
+}
+*/
+/*
+.container {
+  width: 40%;
+  height: 40%;
+  background: black;
+  margin: 0 auto;
+}
+
+.container img.wide {
+    max-width: 100%;
+    max-height: 100%;
+    height: auto;
+}
+
+.container img.tall {
+    max-height: 100%;
+    max-width: 100%;
+    width: auto;
+}​
+*/
+/*
+.fa {
+  float: right;  
+  padding: 20px;
+  font-size: 30px;
+  width: 60px;
+  text-align: center;
+  text-decoration: none;
+  margin: 5px 2px;
+  border-radius: 100%;
+  justify-content: right;
+}
+
+.fa:hover {
+    opacity: 0.7;
+}
+
+.fa-twitter {
+  background: #55ACEE;
+  color: white;
+}
+
+.fa-linkedin {
+  background: #007bb5;
+  color: white;
+}
+
+.fa-github {
+  background: white;
+  color: grey;
+}
+
+.fa-stack-overflow {
+  background: white;
+  color: orangered;
+}
+
+#logo {
+    float: left;
+    width:100px;
+    height:100px;
+    width: 45%;
+    height: 45%;
+    margin: 0px 0px 0px 0px;
+    padding: 0px 0px 0px 0px;
+    font-size: 30px
+}
+
+#list {
+    float: right;
+}
+*/
+
+/*
+#unorderedList li {
+  float: right;
+}
+*/
